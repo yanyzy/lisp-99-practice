@@ -1,3 +1,4 @@
+;P05 (*) Reverse a list.
 
 (defn reverse' [items]
   (if (empty? items)
