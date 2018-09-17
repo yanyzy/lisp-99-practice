@@ -7,7 +7,6 @@
 (defn repli [items n]
   (if (empty? items)
     '()
-    (concat (repeat n (first items)) (repli  (rest items) n)))
-  )
+    (concat (repeat n (first items)) (repli  (rest items) n))))
 
 (println (repli '(a b c) 3))

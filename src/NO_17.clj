@@ -5,7 +5,6 @@
 ;* (split '(a b c d e f g h i k) 3) ( (A B C) (D E F G H I K))
 
 (defn split [items n]
-  (cons (take n items) (list (drop n items)) )
-  )
+  (cons (take n items) (list (drop n items))))
 
 (println (split '(a b c d e f g h i k) 3))

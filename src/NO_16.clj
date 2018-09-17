@@ -8,9 +8,9 @@
   (let [n' n]
     (letfn [(drop-1 [items x]
               (cond (empty? items) '()
-                    (= x 1) (drop-1 (rest items) n)
+                    (= x 1) (rest items)
                     :else (cons (first items) (drop-1 (rest items) (dec x))))
               )]
       (drop-1 items n'))))
 
-(println (drop' '(a b c d e f g h i k) 3))
+(println (drop' '(a b c d e f g h i k) 8))
