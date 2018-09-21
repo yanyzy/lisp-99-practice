@@ -17,10 +17,7 @@
            (map (fn [x]
                   (let [remain (remove #(= x %) items)
                         next (combination (dec n) remain)]
-                    (map #(cons x %) next)
-                    )) items)
-           )
-    ))
+                    (map #(cons x %) next))) items))))
 ;(map #(cons x %) (combination (dec n) (remove #(= x %) items)))
 (print (combination 3 '(a b c d e f)))
 
