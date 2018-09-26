@@ -7,4 +7,4 @@
     )
   )
 
-(println (gcd 1997 615))
+(println (gcd 63 36))
