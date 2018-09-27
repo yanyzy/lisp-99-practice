@@ -2,7 +2,5 @@
 ;A palindrome can be read forward or backward; e.g. (x a m a x).
 
 (defn is-palindrome [items]
-  (if (= items (reverse items))
-    true
-    false))
+  (= items (reverse items)))
 (println (is-palindrome '(x a m a x)))

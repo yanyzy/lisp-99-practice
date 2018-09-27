@@ -6,7 +6,6 @@
 ;Hint: Use the solution of problem P23.
 
 (defn rnd-permu [items]
-  (rnd-select items (count items))
-  )
+  (rnd-select items (count items)))
 
 (println (rnd-permu '(a b c d e f)))
