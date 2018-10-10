@@ -24,7 +24,9 @@
                 '()
                 (if (= 0 (mod z 2))
                   (if (< n (apply min (goldbach z)))
-                    (do (println (goldbach z)) (goldbach-list-three' (inc z)))
+                    (do
+                      (println (goldbach z))
+                      (goldbach-list-three' (inc z)))
                     (goldbach-list-three' (inc z)))
                   (goldbach-list-three' (inc z)))))]
       (goldbach-list-three' 3))))
