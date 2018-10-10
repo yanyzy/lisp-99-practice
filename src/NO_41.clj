@@ -15,7 +15,6 @@
 
 (goldbach-list 9 20)
 
-
 (defn goldbach-list-three [x y n]
   (if (< y 3)
     '()
