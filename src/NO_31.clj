@@ -9,6 +9,5 @@
                 (= 0 (mod x y)) false
                 :else (is-prime' (inc y))))]
       (is-prime' 2))))
-(println (is-prime 7))
 
-;(println (= 0 (mod 1 2)))
+(println (is-prime 7))

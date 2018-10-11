@@ -6,11 +6,10 @@
 ;Example:
 ;* (combination 3 '(a b c d e f)) ((A B C) (A B D) (A B E) ... )
 
-(defn flatten-one-level [coll]
-  (mapcat  #(if (sequential? %) % [%]) coll))
+;(defn flatten-one-level [coll]
+;  (mapcat  #(if (sequential? %) % [%]) coll))
 
 (defn combination [n items]
-  ;(println items)
   (if (= 1 n)
     (map list items)
     (apply concat
@@ -18,6 +17,6 @@
                   (let [remain (remove #(= x %) items)
                         next (combination (dec n) remain)]
                     (map #(cons x %) next))) items))))
-;(map #(cons x %) (combination (dec n) (remove #(= x %) items)))
+
 (print (combination 3 '(a b c d e f)))
 
